@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #F8F5EE;
+    color: #1F2824;
+    background-image: radial-gradient(#D5CBB8 0.75px, transparent 0.75px), radial-gradient(#D5CBB8 0.75px, #F8F5EE 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+  }
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+.font-journal {
+  font-family: 'Lora', Georgia, serif;
+}
+
+/* Paper Card Surfaces */
+.paper-card {
+  background: #FFFDF9;
+  border: 1.5px solid #DDD4C4;
+  border-radius: 14px;
+  box-shadow: 2px 3px 0px rgba(60, 52, 42, 0.05), 0 4px 12px rgba(60, 52, 42, 0.03);
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.paper-card:hover {
+  box-shadow: 2px 5px 0px rgba(60, 52, 42, 0.07), 0 6px 16px rgba(60, 52, 42, 0.04);
+}
+
+/* Washi Tape Effect */
+.washi-tape {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  width: 90px;
+  height: 22px;
+  background-color: rgba(226, 218, 195, 0.75);
+  border-left: 2px dashed rgba(160, 150, 130, 0.4);
+  border-right: 2px dashed rgba(160, 150, 130, 0.4);
+  backdrop-filter: blur(2px);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.washi-tape-accent {
+  background-color: rgba(210, 226, 215, 0.85);
+  border-left: 2px dashed rgba(80, 120, 95, 0.3);
+  border-right: 2px dashed rgba(80, 120, 95, 0.3);
+}
+
+/* Organic hand-sketched border effect */
+.sketch-box {
+  border: 1.5px solid #433D35;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.sketch-box-soft {
+  border: 1.5px solid #C4BAA9;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.sketch-pill {
+  border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
+}
+
+/* Lined notebook paper effect */
+.lined-paper {
+  background: repeating-linear-gradient(
+    transparent,
+    transparent 27px,
+    #E9DFCE 28px
+  );
+  line-height: 28px;
+}
+
+/* Subtle ink button */
+.ink-btn {
+  background: #252F2B;
+  color: #FAF8F2;
+  border: 1.5px solid #1A221E;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  box-shadow: 1px 2px 0px rgba(37, 47, 43, 0.2);
+}
+
+.ink-btn:hover {
+  background: #171E1A;
+  transform: translateY(-1px);
+  box-shadow: 2px 3px 0px rgba(37, 47, 43, 0.25);
+}
+
+.ink-btn-secondary {
+  background: #F4EFE6;
+  color: #2F3B36;
+  border: 1.5px solid #CFBEA5;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+  box-shadow: 1px 2px 0px rgba(120, 110, 90, 0.15);
+}
+
+.ink-btn-secondary:hover {
+  background: #ECE5D8;
+  border-color: #B5A287;
+  transform: translateY(-1px);
+}
+
+/* Subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F2ECE0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C7BBA7;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #AFA08A;
+}
